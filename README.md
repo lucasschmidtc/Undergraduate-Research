@@ -1,6 +1,6 @@
 # Undergraduate-Research
 
-The goal of my undergraduate research project was to devise a method to cluster hand-written words of historical documents to speed up the process of transcription. The assumption was that in a text there aren't many unique words, thus the clustering would reduce the work load.
+The goal of my undergraduate research project was to devise a method to cluster hand-written words of historical documents in order to speed up the process of transcription. The assumption was that in a text there aren't many unique words, thus the clustering would reduce the work load.
 
 ## Proposed Method
 
