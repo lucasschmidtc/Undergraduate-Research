@@ -16,7 +16,7 @@ The image processing workflow was:
 
 ### Feature Extraction and Clustering
 
-From the step of words (rectangles of images) outputted by the previous process, the feature extraction and clustering workflow was:
+From the words (rectangles of images) outputted by the previous process, the feature extraction and clustering workflow was:
 
 1. [From each word extract 3 time series](https://github.com/lucasschmidtc/Undergraduate-Research/blob/master/featureClustering/timeSeries.png): one to the bottom and upper silhouette of the word, and a final one that counts the amount of transition from black to white ink (per column of pixels). The use of time series is justified by the observation that one writtes from left to right, thus the pixels have a weak time relation.
 2. From the time series of each word compute its dissimilarity to every other word by using the [Dynamic Time Warping](https://en.wikipedia.org/wiki/Dynamic_time_warping) technique.
