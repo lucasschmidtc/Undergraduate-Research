@@ -18,7 +18,7 @@ The image processing workflow was:
 
 From the words (rectangles of images) outputted by the previous process, the feature extraction and clustering workflow was:
 
-1. [From each word extract 3 time series](https://github.com/lucasschmidtc/Undergraduate-Research/blob/master/featureClustering/timeSeries.png): one to the bottom and upper silhouette of the word, and a final one that counts the amount of transition from black to white ink (per column of pixels). The use of time series is justified by the observation that one writtes from left to right, thus the pixels have a weak time relation.
+1. [From each word extract 3 time series](https://github.com/lucasschmidtc/Undergraduate-Research/blob/master/featureClustering/timeSeries.png): one from the bottom silhouette of the word, a second from the upper silhouette and a final one that counts the amount of transition from black to white ink (per column of pixels). The use of time series is justified by the observation that one writes from left to right, thus the pixels have a weak time relation.
 2. From the time series of each word compute its dissimilarity to every other word by using the [Dynamic Time Warping](https://en.wikipedia.org/wiki/Dynamic_time_warping) technique.
 3. Apply a Hierarchical clustering algorithm to obtain the dendogram. The [poster](https://github.com/lucasschmidtc/Undergraduate-Research/blob/master/poster-wordContour-siicusp-PT_BR.pdf) contains an image that illustrates this whole process.
 
